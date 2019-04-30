@@ -1,0 +1,88 @@
+body,html{
+	height: 100%;
+}
+
+.form {
+    margin: auto;
+    width: 50%;
+    max-width: 500px;
+    background: #F3F3F3;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,0,2)
+
+}
+
+.h2 {
+    
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0,5)
+
+}
+
+.body {
+	font-family: "Lato", sans-serif;
+	color: #111;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	background-color: #ECECEC;
+}
+
+.container {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.btn{
+	margin: 20px auto;
+	border: none;
+	padding: 10px 44px;
+	font-size: 36px;
+	position: relative;
+        width: 350px;
+	
+        &::before{
+		transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		content: '';
+		width: 50%;
+		height: 100%;
+		background: black;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}        
+.input[type="submit"]{
+    background: linear-gradient(#FFDA63,#FFB940);
+    border: 0;
+    color: brown;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+    
+}
+.input[type="submit"]:hoover{
+    opacity: 1;
+}
+
+.input[type="submit"]:active{
+    transform: scale(0.95);
+}
+
+@media(max-width:768px){
+    form{
+        width: 75%;
+    }
+}
+
+@media(max-width:480px){
+    form{
+        width: 95%;
+    }
+}
